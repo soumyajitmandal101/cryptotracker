@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css?family-Montserrat: itol, eght20, 100;0,300;0,400;0,700;0,900;" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> -->
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="left-nav">
+            <a href="index.html" class="title">Crypto Tracker</a>
+        </div>
+
+        <div class="right-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="favorites/favorites.html" class="nav-link">Favorites </a>
+
+            <div class="search-container">
+                <span class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </span>
+                <input type="text" id="search-box" placeholder="Search" />
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <table id="crypto-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Income</th>
+                    <th>Name</th>
+                    <th>Price
+                        <i id="sort-price-asc" class="fa-solid fa-arrow-up"></i>
+                        <i id="sort-price-desc" class="fa-solid fa-arrow-down"></i>
+                    </th>
+                    <th>Volume
+                        <i id="sort-volume-asc" class="fa-solid fa-arrow-up"></i>
+                        <i id="sort-volume-desc" class="fa-solid fa-arrow-down"></i>
+                    </th>
+                    <th>Market Cop</th>
+                    <th>Favorites</th>
+                </tr>
+            </thead>
+
+            <tbody id="crypto-table-body">
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td><img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547833579" alt="bitcoin" width="24" height="24" /></td>
+
+                    <td>Bitcoin</td>
+
+                    <td>$ 45,000</td>
+
+                    <td>1,000,000</td>
+
+                    <td>$ 1,000,000,000</td>
+
+                    <td><i class="fa-solid fagstar"></i>x/t
+
+                </tr>
+
+            </tbody>
+
+
+        </table>
+
+        <div id="pagination"></div>
+
+        <div class="shimmer-container">
+            <div class="shimmer"></div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNTSquvcXVaimnnLSXUep5PS1qo5NRzHwG19cHmNJnj1Q8hpA/nBWZtZD4r4AX6Y0t5ynLN2g=="></script> -->
+    <script src="https://kit.fontawesome.com/321006c6df.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
